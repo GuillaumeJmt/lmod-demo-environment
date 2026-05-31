@@ -1,0 +1,10 @@
+title "Water molecule - HF/STO-3G"
+geometry units angstroms
+  O  0.000  0.000  0.000
+  H  0.757  0.586  0.000
+  H -0.757  0.586  0.000
+end
+basis
+  * library sto-3g
+end
+task scf energy
