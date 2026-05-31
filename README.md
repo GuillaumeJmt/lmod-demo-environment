@@ -1,4 +1,4 @@
-# Lmod Module Environment — Demo
+# Lmod Module Environment - Demo
 
 Demonstration of Lmod modulefiles for scientific software on HPC clusters.
 Built and tested on Ubuntu 24.04 ARM64 (Lima VM on Apple M1).
