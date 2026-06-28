@@ -13,6 +13,7 @@ whatis("Category:    Computational Chemistry")
 whatis("Description: Open-source high-performance computational chemistry")
 whatis("URL:         https://nwchemgit.github.io")
 
+-- Adjust this prefix to your local NWChem install
 local home = "/home/guillaumelumin.guest/miniconda3"
 local version = "7.3.0"
 
