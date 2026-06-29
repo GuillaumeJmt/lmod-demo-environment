@@ -31,7 +31,10 @@ Tested with a water molecule HF/STO-3G single point calculation:
 
     Total SCF energy = -74.962946671090
 
-This matches the reference value for H2O at the HF/STO-3G level of theory.
+This is the deterministic result of this exact input (geometry + RHF + STO-3G,
+NWChem numerical conventions). Re-running NWChem reproduces it to all printed
+digits — I use it as an installation smoke-test / regression check. It is not a
+published literature value: it is specific to this geometry, method and basis.
 
 ## Environment
 
