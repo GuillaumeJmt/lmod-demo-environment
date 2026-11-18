@@ -6,8 +6,8 @@ Usage:
 
 Documentation: https://nwchemgit.github.io
 
-Note: demonstration modulefile. The default prefix points at my personal
-conda-forge install of NWChem, used during local HPC practice. Override it with
+Note: demonstration modulefile. The default prefix is $HOME/miniconda3, a
+conda-forge install of NWChem used during local HPC practice. Override it with
 `export NWCHEM_ROOT=/path` to adapt this module to another environment.
 ]])
 
@@ -18,8 +18,8 @@ whatis("Description: Open-source high-performance computational chemistry")
 whatis("URL:         https://nwchemgit.github.io")
 
 local version = "7.3.0"
--- Personal conda-forge install used for this demo; override with NWCHEM_ROOT.
-local home = os.getenv("NWCHEM_ROOT") or "/home/guillaumelumin.guest/miniconda3"
+-- Default: conda-forge install in $HOME/miniconda3; override with NWCHEM_ROOT.
+local home = os.getenv("NWCHEM_ROOT") or ((os.getenv("HOME") or "") .. "/miniconda3")
 
 prepend_path("PATH",            home .. "/bin")
 prepend_path("LD_LIBRARY_PATH", home .. "/lib")
